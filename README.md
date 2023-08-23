@@ -1,1 +1,1 @@
-# Common device tree for Xiaomi MT6768 devices
+# device tree for Xiaomi Redmi 9 (Lancelot)
