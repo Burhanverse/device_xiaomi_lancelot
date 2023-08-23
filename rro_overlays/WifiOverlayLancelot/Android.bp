@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "WifiOverlayLancelot",
+    theme: "WifiOverlay",
+    sdk_version: "current",
+    vendor: true
+}
