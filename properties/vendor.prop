@@ -146,6 +146,8 @@ ro.vendor.pref_scale_enable_cfg=1
 ro.vendor.mediatek.version.branch=alps-mp-r0.mp1.tc8sp2
 ro.vendor.mediatek.version.release=alps-mp-r0.mp1.tc8sp2-V2.1.1_huaqin.r0mp1.k69v1.64_P46
 ro.vendor.mediatek.platform=MT6768
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6769T
 
 # NFC
 ro.hardware.nfc_nci=nqx.default
