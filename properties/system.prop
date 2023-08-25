@@ -44,6 +44,11 @@ persist.sys.mdlog_dumpback=2
 # MIUI
 persist.miui.extm.enable=1
 
+# Netflix
+ro.netflix.bsp_rev=MTK6768-19055-1
+ro.netflix.channel=497730f0-ad4b-11e7-95a4-c7ad113ce187
+ro.netflix.signup=1
+
 # Perf
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
