@@ -5,7 +5,7 @@ end="\033[0m"
 echo -e "${color}Cloning dependencies...${end}"
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/kernel_xiaomi_mt6768 --depth 1 kernel/xiaomi/mt6768 > /dev/null
+git clone --quiet https://github.com/nullptr03/kernel_xiaomi_mt6768 -b kangboi --depth 1 kernel/xiaomi/mt6768 > /dev/null
 
 rm -rf device/mediatek/sepolicy_vndr
 git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
