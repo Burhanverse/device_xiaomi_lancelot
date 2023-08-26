@@ -13,8 +13,6 @@ git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_
 rm -rf hardware/mediatek
 git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/resources_XiaomiParts --depth 1 xiaomi-mt6768-dev/resources/XiaomiParts > /dev/null
-
 echo -e "${color}Applying patches !${end}"
 sleep 1
 
