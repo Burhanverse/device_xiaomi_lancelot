@@ -353,6 +353,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio-V1.4-java
+    
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Rootdir
 PRODUCT_PACKAGES += \

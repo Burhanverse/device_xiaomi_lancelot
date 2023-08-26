@@ -21,6 +21,9 @@ debug.als.logs=1
 config.svi.xml=1
 config.svi.xml.print=1
 
+# Droid-X props
+ro.droidx.maintainer=Burhanverse
+
 # FM Radio
 persist.internalAntenna.enable=true
 

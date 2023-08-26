@@ -12,9 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lancelot
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := droidx_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
