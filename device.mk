@@ -81,6 +81,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor
 
 # Camera
+PRODUCT_SOONG_NAMESPACES += 
+    xiaomi-mt6768-dev/packages/gcam-prebuilt
+
+PRODUCT_PACKAGES += \
+    CameraMeledak
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.3.vendor \
