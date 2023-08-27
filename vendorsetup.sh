@@ -3,6 +3,8 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/gcam-prebuilt --depth 1 xiaomi-mt6768-dev/packages/gcam-prebuilt > /dev/null 
+
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
 
 git clone --quiet https://github.com/nullptr03/kernel_xiaomi_mt6768 -b kangboi --depth 1 kernel/xiaomi/mt6768 > /dev/null
