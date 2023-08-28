@@ -21,4 +21,8 @@
 <resources>
     <!-- Camera 1 is the front camera -->
     <string translatable="false" name="config_protectedCameraId">1</string>
+    
+<!-- Bouncer User Switcher -->
+    <bool name="config_enableBouncerUserSwitcher">false</bool>
+    
 </resources>
