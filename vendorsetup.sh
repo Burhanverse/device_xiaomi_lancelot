@@ -14,13 +14,17 @@ git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_
 
 rm -rf hardware/mediatek
 git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
+echo -e "Dependencies cloned successfully!"
 
-echo -e "${color}Applying patches !${end}"
-sleep 1
+echo -e "Deleting dtbo & kernel artifac"
+rm -rf out/target/product/merlin/obj/DTBO_OBJ
+rm -rf out/target/product/merlin/obj/KERNEL_OBJ
 
 # Configure the patches path
 patchDir="device/xiaomi/lancelot/patches"
 echo -e "Patches Path: ${patchDir}"
+
+echo -e "${color}Applying patches !${end}"
 
 # Patch bootanimation lag
 rm -rf frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp
