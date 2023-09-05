@@ -14,11 +14,10 @@ git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_
 
 rm -rf hardware/mediatek
 git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
-echo -e "Dependencies cloned successfully!"
 
-echo -e "Deleting dtbo & kernel artifac"
-rm -rf out/target/product/merlin/obj/DTBO_OBJ
-rm -rf out/target/product/merlin/obj/KERNEL_OBJ
+git clone --quiet https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c --depth 1 prebuilts/clang/host/linux-x86/clang-r487747c
+
+echo -e "Dependencies cloned successfully!"
 
 # Configure the patches path
 patchDir="device/xiaomi/lancelot/patches"
