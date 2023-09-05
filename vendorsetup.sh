@@ -3,18 +3,19 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/gcam-prebuilt --depth 1 xiaomi-mt6768-dev/packages/gcam-prebuilt > /dev/null 
-
+# prebuilt apps
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/prebuilt-apps --depth 1 xiaomi-mt6768-dev/packages/prebuilt-apps > /dev/null
+# vendor
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
-
+# kernel
 git clone --quiet https://github.com/nullptr03/kernel_xiaomi_mt6768 -b kangboi --depth 1 kernel/xiaomi/mt6768 > /dev/null
-
+# mtk sepolicy vendor
 rm -rf device/mediatek/sepolicy_vndr
 git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
-
+# mtk hardware 
 rm -rf hardware/mediatek
 git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
-
+# clang
 git clone --quiet https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c --depth 1 prebuilts/clang/host/linux-x86/clang-r487747c
 
 echo -e "Dependencies cloned successfully!"
