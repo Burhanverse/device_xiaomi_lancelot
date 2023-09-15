@@ -5,13 +5,37 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-  bcr \
-  DeskClock \
-  ExactCalculator \
-  Etar \
-  Recorder \
-  FMRadio \
-  messaging
+    bcr \
+    FMRadio \
+    AndroidAutoStubPrebuilt \
+    AmbientSensePrebuilt \
+    CalculatorGooglePrebuilt \
+    CalendarGooglePrebuilt \
+    Chrome-Stub \
+    DeskClock \
+    Drive \
+    Eleven \
+    Etar \
+    ExactCalculator \
+    yetCalc \
+    Gallery2 \
+    Jelly \
+    MaestroPrebuilt \
+    MatLog \
+    Maps \
+    Gmail2 \
+    PersonalSafety \
+    Photos \
+    PrebuiltDeskClockGoogle \
+    Recorder \
+    RecorderPrebuilt \
+    SafetyHubPrebuilt \
+    Snap \
+    Turbo \
+    TurboPrebuilt \
+    TipsPrebuilt \
+    Velvet \
+    YouTube
     
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
