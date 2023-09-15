@@ -458,6 +458,12 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
 
+# Google Camera
+ifneq ($(wildcard packages/apps/GoogleCamera_8.1),)
+PRODUCT_PACKAGES += \
+    GoogleCamera
+endif
+
 # include prebuilt apps config
     $(call inherit-product, xiaomi-mt6768-dev/packages/prebuilt-apps/config.mk)
     

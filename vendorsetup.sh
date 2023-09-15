@@ -3,8 +3,8 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
-# prebuilt apps
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/prebuilt-apps --depth 1 xiaomi-mt6768-dev/packages/prebuilt-apps > /dev/null
+# prebuilt gcam
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 --depth 1 packages/apps/GoogleCamera_8.1 > /dev/null
 # Viper4Android
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 packages/apps/ViperFX > /dev/null
 # vendor
