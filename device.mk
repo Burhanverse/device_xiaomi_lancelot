@@ -469,9 +469,6 @@ ifneq ($(wildcard hardware/*/interfaces/health),)
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 endif
-
-# include prebuilt apps config
-    $(call inherit-product, xiaomi-mt6768-dev/packages/prebuilt-apps/config.mk)
     
 # Viper4Android
     $(call inherit-product, packages/apps/ViperFX/config.mk)
