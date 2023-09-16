@@ -14,16 +14,21 @@ $(call inherit-product, device/xiaomi/lancelot/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-# disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := true
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-# Quick tap feature
-TARGET_SUPPORTS_QUICK_TAP := true
-# Face Unlock
+# DroidX stuff
+DROIDX_GAPPS := false
+
+# Device props
+TARGET_SUPPORTS_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
+# Charging Animation
+TARGET_USE_PIXEL_CHARGER := true
+
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := droidx_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
