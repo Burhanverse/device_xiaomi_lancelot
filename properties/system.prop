@@ -1,6 +1,6 @@
 # Audio
 ro.audio.silent=0
-ro.config.vc_call_vol_steps=9
+ro.config.vc_call_vol_steps=15
 audio_para_version=J15S-Audiopara-V20-20200527
 
 # Brand
@@ -23,9 +23,6 @@ config.svi.xml.print=1
 
 # Droid-X props
 ro.droidx.maintainer=Burhanverse
-
-#Earpiece props
-ro.config.vc_call_vol_steps=15
 
 # FM Radio
 persist.internalAntenna.enable=true
