@@ -24,6 +24,9 @@ config.svi.xml.print=1
 # Droid-X props
 ro.droidx.maintainer=Burhanverse
 
+#Earpiece props
+ro.config.vc_call_vol_steps=15
+
 # FM Radio
 persist.internalAntenna.enable=true
 
