@@ -459,11 +459,9 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
 # Google Camera
-ifneq ($(wildcard packages/apps/GoogleCamera_8.1),)
 PRODUCT_PACKAGES += \
     GoogleCamera
-endif
-
+    
 # Lineage Health
 ifneq ($(wildcard hardware/*/interfaces/health),)
 PRODUCT_PACKAGES += \
