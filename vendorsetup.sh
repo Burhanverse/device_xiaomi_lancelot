@@ -8,7 +8,7 @@ git clone --quiet https://github.com/Burhanverse/packages_apps_GoogleCamera --de
 # Viper4Android
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 packages/apps/ViperFX > /dev/null
 # vendor
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot --depth 1 vendor/xiaomi/lancelot > /dev/null
 # kernel
 git clone https://github.com/Xiaomi-MT6768-Dev/kernel_xiaomi_mt6768 --depth 1 kernel/xiaomi/mt6768 > /dev/null
 # mtk sepolicy vendor
