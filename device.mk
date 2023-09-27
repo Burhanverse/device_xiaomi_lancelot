@@ -456,6 +456,14 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
 
+# Moto Calendar
+PRODUCT_PACKAGES += \
+    MotoCalendar
+
+# OneUIWeather
+PRODUCT_PACKAGES += \
+    OneUIWeather
+    
 # Google Camera
 PRODUCT_PACKAGES += \
     GoogleCamera

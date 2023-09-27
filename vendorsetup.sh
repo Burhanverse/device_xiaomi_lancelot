@@ -3,6 +3,10 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
+# OneUIWeather
+git clone --depth 1 https://github.com/Burhanverse/packages_apps_OneUIWeather packages/apps/OneUIWeather
+# motocalendar
+git clone --depth 1 https://github.com/Burhanverse/packages_apps_MotoCalendar packages/apps/MotoCalendar
 # prebuilt gcam
 git clone --quiet https://github.com/Burhanverse/packages_apps_GoogleCamera --depth 1 packages/apps/GoogleCamera > /dev/null
 # Viper4Android
