@@ -14,7 +14,7 @@ git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 
 # vendor
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot --depth 1 vendor/xiaomi/lancelot > /dev/null
 # kernel
-git clone https://github.com/Xiaomi-MT6768-Dev/kernel_xiaomi_mt6768 --depth 1 kernel/xiaomi/mt6768 > /dev/null
+git clone --depth 1 https://github.com/Burhanverse/kernel_xiaomi_mt6768 -b seggs kernel/xiaomi/mt6768
 # mtk sepolicy vendor
 rm -rf device/mediatek/sepolicy_vndr
 git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
