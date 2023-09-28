@@ -473,6 +473,3 @@ ifneq ($(wildcard hardware/*/interfaces/health),)
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 endif
-    
-# Viper4Android
-    $(call inherit-product, packages/apps/ViperFX/config.mk)

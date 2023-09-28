@@ -9,8 +9,6 @@ git clone --depth 1 https://github.com/Burhanverse/packages_apps_OneUIWeather pa
 git clone --depth 1 https://github.com/Burhanverse/packages_apps_MotoCalendar packages/apps/MotoCalendar
 # prebuilt gcam
 git clone --quiet https://github.com/Burhanverse/packages_apps_GoogleCamera --depth 1 packages/apps/GoogleCamera > /dev/null
-# Viper4Android
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 packages/apps/ViperFX > /dev/null
 # vendor
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot --depth 1 vendor/xiaomi/lancelot > /dev/null
 # kernel
