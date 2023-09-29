@@ -3,6 +3,8 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
+# custom installer
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
 # OneUIWeather
 git clone --depth 1 https://github.com/Burhanverse/packages_apps_OneUIWeather packages/apps/OneUIWeather
 # motocalendar
