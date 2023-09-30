@@ -10,19 +10,19 @@ git clone --depth 1 https://github.com/Burhanverse/packages_apps_OneUIWeather pa
 # motocalendar
 git clone --depth 1 https://github.com/Burhanverse/packages_apps_MotoCalendar packages/apps/MotoCalendar
 # prebuilt gcam
-git clone --quiet https://github.com/Burhanverse/packages_apps_GoogleCamera --depth 1 packages/apps/GoogleCamera > /dev/null
+git clone --depth 1 https://github.com/Burhanverse/packages_apps_GoogleCamera packages/apps/GoogleCamera
 # vendor
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot --depth 1 vendor/xiaomi/lancelot > /dev/null
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot vendor/xiaomi/lancelot
 # kernel
 git clone --depth 1 https://github.com/Burhanverse/kernel_xiaomi_mt6768 -b seggs kernel/xiaomi/mt6768
 # mtk sepolicy vendor
 rm -rf device/mediatek/sepolicy_vndr
-git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
+git clone --depth 1 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 # mtk hardware 
 rm -rf hardware/mediatek
-git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
+git clone --depth 1 https://github.com/LineageOS/android_hardware_mediatek hardware/mediatek
 # clang
-git clone --quiet https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c --depth 1 prebuilts/clang/host/linux-x86/clang-r487747c
+git clone --depth 1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c prebuilts/clang/host/linux-x86/clang-r487747c
 
 echo -e "Dependencies cloned successfully!"
 
