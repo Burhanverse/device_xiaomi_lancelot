@@ -468,6 +468,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCamera
     
+# Custom Package Installer
+ifneq ($(wildcard packages/apps/CustomPackageInstaller),)
+PRODUCT_PACKAGES += \
+    CustomPackageInstaller
+endif
+    
 # Lineage Health
 ifneq ($(wildcard hardware/*/interfaces/health),)
 PRODUCT_PACKAGES += \
