@@ -5,12 +5,6 @@ end="\033[0m"
 echo -e "${color}Cloning dependencies...${end}"
 # custom installer
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
-# OneUIWeather
-git clone --depth 1 https://github.com/Burhanverse/packages_apps_OneUIWeather packages/apps/OneUIWeather
-# motocalendar
-git clone --depth 1 https://github.com/Burhanverse/packages_apps_MotoCalendar packages/apps/MotoCalendar
-# prebuilt gcam
-git clone --depth 1 https://github.com/Burhanverse/packages_apps_GoogleCamera packages/apps/GoogleCamera
 # vendor
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot vendor/xiaomi/lancelot
 # kernel
