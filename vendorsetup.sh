@@ -3,18 +3,16 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
+#GoogleCamera
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 packages/apps/GoogleCamera_8.1
 # custom installer
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
-# OneUIWeather
-git clone --depth 1 https://github.com/Burhanverse/packages_apps_OneUIWeather packages/apps/OneUIWeather
-# motocalendar
-git clone --depth 1 https://github.com/Burhanverse/packages_apps_MotoCalendar packages/apps/MotoCalendar
-# prebuilt gcam
-git clone --depth 1 https://github.com/Burhanverse/packages_apps_GoogleCamera packages/apps/GoogleCamera
+# firmware
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/device_xiaomi_lancelot-firmware device/xiaomi/lancelot-firmware
 # vendor
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot vendor/xiaomi/lancelot
 # kernel
-git clone --depth 1 https://github.com/Burhanverse/kernel_xiaomi_mt6768 -b seggs kernel/xiaomi/mt6768
+git clone --depth 1 https://gitlab.com/MT6768Lab/KernelTree kernel/xiaomi/mt6768
 # mtk sepolicy vendor
 rm -rf device/mediatek/sepolicy_vndr
 git clone --depth 1 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr

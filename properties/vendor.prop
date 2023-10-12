@@ -54,18 +54,6 @@ ro.vendor.mtk_zsdhdr_support=1
 ro.vendor.mtk_slow_motion_support=1
 ro.vendor.mtk_camera_app_version=3
 
-# Dalvik
-dalvik.vm.dexopt.secondary=true
-dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
-dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.dex2oat-threads=6
-
-# Dexopt
-persist.bg.dexopt.enable=true
-pm.dexopt.install=speed-profile
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.first-boot=quicken
-
 # DRM
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
@@ -225,6 +213,11 @@ ro.vendor.mtk_shutdown_support=0
 init.userspace_reboot.is_supported=true
 
 # SurfaceFlinger
+ro.surface_flinger.set_idle_timer_ms=80
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.protected_contents=true
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3

@@ -6,7 +6,9 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     bcr \
+    Browser2 \
     FMRadio \
+    F-DroidPrivilegedExtension \
     AndroidAutoStubPrebuilt \
     AmbientSensePrebuilt \
     CalculatorGooglePrebuilt \
@@ -20,6 +22,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     yetCalc \
     Gallery2 \
     Jelly \
+    Music \
     MaestroPrebuilt \
     MatLog \
     Maps \
