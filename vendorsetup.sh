@@ -11,7 +11,7 @@ git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/device_xiaomi_lancelot-
 # vendor
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot vendor/xiaomi/lancelot
 # kernel
-git clone --depth 1 https://github.com/Burhanverse/kernel_xiaomi_mt6768 -b seggs kernel/xiaomi/mt6768
+git clone --depth 1 https://gitlab.com/MT6768Lab/KernelTree kernel/xiaomi/mt6768
 # mtk sepolicy vendor
 rm -rf device/mediatek/sepolicy_vndr
 git clone --depth 1 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
