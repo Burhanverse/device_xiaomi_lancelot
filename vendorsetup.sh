@@ -3,7 +3,8 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies...${end}"
-
+#GoogleCamera
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 packages/apps/GoogleCamera_8.1
 # custom installer
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
 # firmware

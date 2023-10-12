@@ -459,6 +459,12 @@ ifneq ($(wildcard packages/apps/CustomPackageInstaller),)
 PRODUCT_PACKAGES += \
     CustomPackageInstaller
 endif
+
+# Google Camera
+ifneq ($(wildcard packages/apps/GoogleCamera_8.1),)
+PRODUCT_PACKAGES += \
+    GoogleCamera8.1
+endif
     
 # Lineage Health
 ifneq ($(wildcard hardware/*/interfaces/health),)
