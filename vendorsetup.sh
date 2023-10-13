@@ -26,3 +26,23 @@ patchDir="device/xiaomi/lancelot/patches"
 echo -e "Applying RenderEngineThreaded patches!"
 rm -rf frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp
 cp ${patchDir}/frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp frameworks/native/libs/renderengine/threaded/
+
+# Patch media codec issues
+echo -e "Applying Media Codec patches!"
+rm -rf frameworks/av/media/libstagefright/include/media/stagefright/ACodec.h
+rm -rf frameworks/av/media/libstagefright/include/media/stagefright/MediaCodecSource.h
+rm -rf frameworks/av/media/libstagefright/ACodec.cpp
+rm -rf frameworks/av/media/libstagefright/MediaCodecSource.cpp
+rm -rf frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+rm -rf frameworks/av/media/libstagefright/omx/SimpleSoftOMXComponent.cpp
+rm -rf frameworks/av/media/mediaserver/mediaserver.rc
+rm -rf frameworks/av/services/mediacodec/seccomp_policy/mediaswcodec-arm.policy
+
+cp ${patchDir}/frameworks/av/media/libstagefright/include/media/stagefright/ACodec.h frameworks/av/media/libstagefright/include/media/stagefright/
+cp ${patchDir}/frameworks/av/media/libstagefright/include/media/stagefright/MediaCodecSource.h frameworks/av/media/libstagefright/include/media/stagefright/
+cp ${patchDir}/frameworks/av/media/libstagefright/ACodec.cpp frameworks/av/media/libstagefright/
+cp ${patchDir}/frameworks/av/media/libstagefright/MediaCodecSource.cpp frameworks/av/media/libstagefright/
+cp ${patchDir}/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp frameworks/av/media/libstagefright/omx/
+cp ${patchDir}/frameworks/av/media/libstagefright/omx/SimpleSoftOMXComponent.cpp frameworks/av/media/libstagefright/omx/
+cp ${patchDir}/frameworks/av/media/mediaserver/mediaserver.rc frameworks/av/media/mediaserver/
+cp ${patchDir}/frameworks/av/services/mediacodec/seccomp_policy/mediaswcodec-arm.policy frameworks/av/services/mediacodec/seccomp_policy/
