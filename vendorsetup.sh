@@ -17,5 +17,12 @@ rm -rf hardware/mediatek
 git clone --depth 1 https://github.com/LineageOS/android_hardware_mediatek hardware/mediatek
 # clang
 git clone --depth 1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c prebuilts/clang/host/linux-x86/clang-r487747c
-
 echo -e "Dependencies cloned successfully!"
+
+# Configure the patches path
+patchDir="device/xiaomi/lancelot/patches"
+
+# Patch RenderEngineThreaded
+echo -e "Applying RenderEngineThreaded patches!"
+rm -rf frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp
+cp ${patchDir}/frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp frameworks/native/libs/renderengine/threaded/
