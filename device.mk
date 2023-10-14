@@ -409,7 +409,7 @@ PRODUCT_PACKAGES += \
 # Wi-Fi
 PRODUCT_PACKAGES += \
       hostapd \
-    wpa_supplicant
+    wpa_supplicant \
     android.hardware.wifi-service-lazy.lancelot
 
 PRODUCT_PACKAGES += \
