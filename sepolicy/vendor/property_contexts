@@ -12,7 +12,6 @@ persist.vendor.camera.                                  u:object_r:vendor_mtk_ca
 persist.camera.module.                                  u:object_r:vendor_mtk_camera_prop:s0
 
 # Fingerprint
-persist.vendor.sys.fp.                                  u:object_r:vendor_fingerprint_prop:s0
 vendor.fps_hal.                                         u:object_r:vendor_fingerprint_prop:s0
 
 # Thermal
