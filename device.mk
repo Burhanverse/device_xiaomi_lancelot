@@ -408,16 +408,9 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi.supplicant@1.0.vendor \
-    android.hardware.wifi.supplicant@1.1.vendor \
-    android.hardware.wifi.supplicant@1.2.vendor \
-    android.hardware.wifi.supplicant@1.3.vendor \
-    android.hardware.wifi.hostapd@1.0.vendor \
-    android.hardware.wifi.hostapd@1.1.vendor \
-    android.hardware.wifi.hostapd@1.2.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy.lancelot
+      hostapd \
+    wpa_supplicant
+    android.hardware.wifi-service-lazy.lancelot
 
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
