@@ -1335,6 +1335,8 @@ vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib/libcarrierconfig.so
 vendor/lib/libutinterface_custom_md.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.5-impl.so
+vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-v30.so
+vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v30.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libccci_util.so
 vendor/lib64/libcurl_xcap_md.so
