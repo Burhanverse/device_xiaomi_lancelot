@@ -11,19 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
-
-# lmodroid stuf
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common stuff.
+$(call inherit-product, vendor/fuse/config/common_full_phone.mk)
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lmodroid_lancelot
+PRODUCT_NAME := fuse_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
