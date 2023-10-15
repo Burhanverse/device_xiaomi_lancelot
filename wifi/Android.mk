@@ -37,7 +37,7 @@ LOCAL_HEADER_LIBRARIES := libhardware_legacy_headers
 
 LOCAL_REQUIRED_MODULES := \
     android.hardware.wifi-service-lazy.lancelot.rc \
-    android.hardware.wifi-service.lancelot.xml
+    android.hardware.wifi-service.lancelot.xml \
     vendor_hals.xml
 
 LOCAL_SRC_FILES := \
