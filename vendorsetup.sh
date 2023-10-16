@@ -10,7 +10,7 @@ git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPac
 # firmware
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/device_xiaomi_lancelot-firmware device/xiaomi/lancelot-firmware
 # vendor
-git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot vendor/xiaomi/lancelot
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot -b 13 vendor/xiaomi/lancelot
 # kernel
 git clone --depth 1 https://gitlab.com/MT6768Lab/KernelTree kernel/xiaomi/mt6768
 # mtk sepolicy vendor
