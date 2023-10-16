@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lmodroid_lancelot.mk
+    $(LOCAL_DIR)/droidx_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    lmodroid_lancelot-user \
-    lmodroid_lancelot-userdebug \
-    lmodroid_lancelot-eng
+    droidx_lancelot-user \
+    droidx_lancelot-userdebug \
+    droidx_lancelot-eng
