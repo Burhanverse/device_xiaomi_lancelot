@@ -267,6 +267,8 @@ PRODUCT_PACKAGES += \
     WifiOverlayLancelot
 
 # Power
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.mediatek-libperfmgr
 
