@@ -7,8 +7,6 @@ echo -e "${color}Cloning dependencies...${end}"
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 packages/apps/GoogleCamera_8.1
 # custom installer
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
-# firmware
-git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/device_xiaomi_lancelot-firmware device/xiaomi/lancelot-firmware
 # vendor
 git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_lancelot -b 13 vendor/xiaomi/lancelot
 # kernel
