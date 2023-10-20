@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_lancelot.mk
+    $(LOCAL_DIR)/spark_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_lancelot-user \
-    droidx_lancelot-userdebug \
-    droidx_lancelot-eng
+    spark_lancelot-user \
+    spark_lancelot-userdebug \
+    spark_lancelot-eng
