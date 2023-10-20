@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/lancelot/device.mk)
 $(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # DroidX stuff
-DROIDX_GAPPS := false
+DROIDX_GAPPS := fals
 
 # Device props
 TARGET_SUPPORTS_BLUR := true
