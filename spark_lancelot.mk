@@ -12,24 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
-
-# DroidX stuff
-DROIDX_GAPPS := fals
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Device props
-TARGET_SUPPORTS_BLUR := true
+TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Charging Animation
+# Charging
 TARGET_USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := droidx_lancelot
+PRODUCT_NAME := spark_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
