@@ -16,7 +16,7 @@ ro.mtk_cam_stereo_camera_support=1
 dalvik.vm.dex2oat64.enabled=true
 
 # maintainer prop
-ro.droidx.maintainer=Burhanverse
+ro.spark.maintainer=Burhanverse
 
 # Ram Management
 ro.config.fha_enable=true
