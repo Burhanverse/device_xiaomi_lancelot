@@ -458,11 +458,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
     
-# Custom Package Installer
-ifneq ($(wildcard packages/apps/CustomPackageInstaller),)
-PRODUCT_PACKAGES += \
-    CustomPackageInstaller
-endif
 
 # Google Camera
 ifneq ($(wildcard packages/apps/GoogleCamera_8.1),)
